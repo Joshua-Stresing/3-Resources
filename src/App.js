@@ -1,9 +1,10 @@
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
 import './App.css';
+import Header from './Views/components/Header';
 import Families from './Views/Families/Families';
 import Movies from './Views/Movies/Movies';
 import Directors from './Views/Directors/Directors';
-
+import Main from './Views/Main/Main';
 
 function App() {
  
@@ -13,7 +14,7 @@ function App() {
       <div className='App'>
         <Switch>
           <Route exact path = "/">
-            <Home />
+            <Main />
           </Route>
           <Route exact path = "/families">
             <Families />
