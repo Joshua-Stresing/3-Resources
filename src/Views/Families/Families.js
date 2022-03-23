@@ -21,9 +21,9 @@ export default function Families() {
     <div className='Families'>
       <h1>Families</h1>
       {error && <p>{error}</p>}
-      { families.map((data) => (
-        <div key={data.id}>
-          <p>{data.name}</p>
+      { families.map((family) => (
+        <div key={family.id}>
+          <p>{family.name}</p>
         </div>
       ))}
     </div>
